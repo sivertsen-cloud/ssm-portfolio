@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSM Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">
+      <div class="svg-logo">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687.08 359.09">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #5b0042;
+                font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                font-size: 327.35px;
+                font-weight: 700;
+              }
+            </style>
+          </defs>
+          <text class="cls-1" transform="translate(0 279.55) scale(1.15 1)">
+            <tspan x="0" y="0">ssm</tspan>
+          </text>
+        </svg>
+      </div>
+    </a>
+    <!-- <p class="logo">Silje Skogstrand Moe</p> -->
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <div style="margin-bottom: 20px;"></div>
+    <section id="about" class="about">
+      <div class="intro">
+        <div class="intro-content">
+          <h2>Get to know me</h2>
+          <p class="bottom">
+            Hi, I’m Silje, a passionate UX designer living in Sandnes, Norway.
+            I love finding creative solutions to real
+            problems people face.
+            <br>
+            <br>
+          </p>
+        </div>
+        <div class="image-cropper">
+          <img src="assets/IMG_1066.JPG" alt="Profile Icon" class="profile-picture">
+        </div>
+      </div>
+      <div class="intro2">
+        <p>
+          With a degree in UX design and a bachelor’s in TV and media production, I bring a unique blend of skills to
+          my design process. I’m inherently curious, which drives me to explore new ideas and expand my skill set
+          continuously. <br>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <section id="contact" class="contact">
+      <h2 class="footerh2">Let's connect!</h2>
+      <div class="contact-info">
+        <p class="contact-email">siljeskogstrand@gmail.com</p>
+        <ul class="contact-list-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/silje-skogstrand-moe-1bba7b269/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="behance.com">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- &copy; 2024 SSM -->
+  </footer>
+
+</body>
+
+<script>
+  var ele = document.getElementsByClassName("active");
+  ele[0].style.textDecoration = "underline";
+  ele[0].style.color = "#5B0042";
+</script>

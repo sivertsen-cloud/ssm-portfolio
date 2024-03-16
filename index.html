@@ -1,259 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSM Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #ffe0e0;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #ffc5c5;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Main content styles */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: transparent
-
-        }
-
-        .intro img {
-            max-width: 350px; /* Adjust the maximum width as needed */
-            max-height: 350px; /* Adjust the maximum height as needed */
-        }
-
-        /* Contact styles */
-
-
-        .contact-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    }
-
-        .contact-list li {
-    margin-right: 10px; /* Add some spacing between icons */
-    }
-
-        .contact-list a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-    }
-
-        .contact-list a:hover {
-    background-color: #ddd;
-    }
-
-        .contact-list i {
-    margin-right: 5px;
-    font-size: 1.5rem;
-    }
-
-
-
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffe0e0;
-            color: #fff;
-        }
-        /* Add styles for the new layout */
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-}
-
-.profile {
-    max-width: 250px;
-    max-height: 250px;
-
-}
-
-.intro-content {
-    flex-grow: 1;
-}
-
-.portfolio {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, auto);
-}
-
-.portfolio img {
-    width: 100%;
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <header>
-        <h1>SSM</h1>
-        <p>UX-Designer</p>
-    </header>
 
+<body>
+    <!-- <object data="header.html">
+    </object> -->
     <nav>
+        <a href="index.html">
+            <div class="svg-logo">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 687.08 359.09">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #5b0042;
+                                font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                                font-size: 327.35px;
+                                font-weight: 700;
+                            }
+                        </style>
+                    </defs>
+                    <text class="cls-1" transform="translate(0 279.55) scale(1.15 1)">
+                        <tspan x="0" y="0">ssm</tspan>
+                    </text>
+                </svg>
+            </div>
+        </a>
+        <!-- <p class="logo">Silje Skogstrand Moe</p> -->
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <style>
-            /* Add some spacing between lines in the About Me section */
-            .intro p,
-            .content p {
-                margin-bottom: 20px; /* Adjust the value as needed */
-            }
-        </style>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="intro">
-                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/peepo-clap-maria-s-fredericks.jpg" alt="Profile Icon" class="profile">
-                <div class="intro-content">
-                    <p>
-                        Welcome to my UX design space, where simplicity meets innovation. <br>
-                        I specialize in creating intuitive and elegant digital experiences that connect with users effortlessly. <br>
-                        Dive into my portfolio to discover how I turn complex challenges into user-friendly solutions. <br>
-                    </p>
-                </div>
+        <div class="content">
+            <p class="intro-text">
+                Hi!🫶 I’m Silje, a UX-designer with a background in media production.
+                I love finding creative solutions to real problems people face.
+            </p>
+            <!-- <a href="mailto:siljeskogstrand@gmail.com">
+                <button type="button" class="connect-button">Let's connect!</button>
+            </a> -->
+            <a class="connect-button" href="mailto:siljeskogstrand@gmail.com">
+                <p class="connect-text">Let's connect!</p>
+            </a>
+            <div>
+                <h2 style="text-align:  center; padding: 64px 0 8px">Work</h2>
+                <svg style="width: 100%;" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                    fill="none">
+                    <path
+                        d="M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z"
+                        fill="#1C1C1E" />
+                </svg>
             </div>
-            <div class="content">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <div class="portfolio">
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
+            <div class="portfolio">
+                <a
+                    href="https://www.behance.net/embed/h/project/193264353/L2dhbGxlcnkvMTkzMjY0MzUzL0Fzc2lzdGFuY2UtRGV2aWNlcy1BcHA%3D/">
+                    <div class="case">
+                        <iframe src="https://www.behance.net/embed/project/193264353?ilo0=1" height="316" width="394"
+                            allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                            refererPolicy="strict-origin-when-cross-origin"></iframe>
+                        <div class="case-text">
+                            <p class="case-type">UX Case study</p>
+                            <h1 class="case-headline">Dine Hjelpemidler</h1>
+                            <p class="case-description">Designing an accessible app to enhance the independence of users
+                                with assistance devices</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
-                    <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNXX59rpggza6135LyCJNid0il4p1tShtFCOA9UXr6w&s">
-                        <p> Image text</p>
-                    </div>
+                </a>
+                <div class="case-spacer" style="padding: 84px 0 0px 0;">
                 </div>
+                <a
+                    href="https://www.behance.net/embed/h/project/192650237/L2dhbGxlcnkvMTkyNjUwMjM3L1Bvc3RuYXRhbC1FeGVyY2lzZS1BcHA%3D/">
+                    <div class="case" style="padding: 0px 0 100px 0;">
+                        <iframe src="https://www.behance.net/embed/project/192650237?ilo0=1" height="316" width="394"
+                            allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                            refererPolicy="strict-origin-when-cross-origin"></iframe>
+                        <div class="case-text">
+                            <p class="case-type">UX Case study</p>
+                            <h1 class="case-headline">Postnatal Exercise</h1>
+                            <p class="case-description">Empowering new mothers and reducing postnatal depression with an
+                                exercise app</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Download my resume to learn more about my qualifications and experience:</p>
-            <a href="https://ssm-portfolio.s3.eu-north-1.amazonaws.com/fake%20CV.pdf" target="_blank" class="resume-link">Download Resume</a>
-        </section>
-
-        <div style="margin-bottom: 20px;"></div>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div style="margin-bottom: 20px;"></div>
-            <ul class="contact-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/silje-skogstrand-moe-1bba7b269/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:siljeskogstrand@gmail.com">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                </li>
-            </ul>
-        </section>
-
+        </div>
     </div>
 
     <footer>
-        &copy; 2024 SSM
+        <section id="contact" class="contact">
+            <h2 class="footerh2">Let's connect!</h2>
+            <div class="contact-info">
+                <a href="mailto:siljeskogstrand@gmail.com">
+                    <p class="contact-email">siljeskogstrand@gmail.com</p>
+                </a>
+                <ul class="contact-list-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/silje-skogstrand-moe-1bba7b269/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="behance.com">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- &copy; 2024 SSM -->
     </footer>
 </body>
+
 </html>
+
+<script>
+    var ele = document.getElementsByClassName("active");
+    ele[0].style.textDecoration = "underline";
+    ele[0].style.color = "#5B0042";
+</script>
